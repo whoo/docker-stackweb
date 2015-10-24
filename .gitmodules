@@ -1,0 +1,6 @@
+[submodule "dockweb-php-fpm"]
+	path = dockweb-php-fpm
+	url = git@github.com:whoo/dockweb-php-fpm.git
+[submodule "dockweb-nginx"]
+	path = dockweb-nginx
+	url = git@github.com:whoo/dockweb-nginx.git
