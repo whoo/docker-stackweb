@@ -1,5 +1,6 @@
 #!/bin/bash
 
+### ADD number of instance
 MAX=${1:-5}
 
 echo "Starting $MAX box"
