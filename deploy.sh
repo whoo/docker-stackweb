@@ -7,6 +7,7 @@ DIR="-v `pwd`/html:/var/www/html "
 
 #echo "$DIR"
 
+#ADDing persitent mount point | html easier
 #docker create --name htmldata -v /var/www/html debian /bin/true
 #REP=$(docker inspect  -f "{{ (index .Mounts 0).Source }}" htmldata)
 
