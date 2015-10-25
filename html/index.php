@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 
-<head></head>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Galindo' rel='stylesheet' type='text/css'>
+
 <link rel=stylesheet type=text/css href=style.css>
+</head>
 
 
 
@@ -11,19 +14,16 @@
 
 <div>
 <h1> NginX Test > with php-fpm </h1>
-<p> you're on <br>
+<p> you're successfully running php-fpm on <br>
 
 <?php
 $lst=file("serv");
 sort($lst);
-
 foreach($lst as $a)
 {
 list(,$grp,$serv) = preg_split('/\//',trim($a));
 echo  ($_SERVER['HOSTNAME']== $serv )?">>> $a <<< <br>":"$a<br>";
 }
-
-
 ?>
 
 
