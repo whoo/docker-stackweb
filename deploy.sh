@@ -12,7 +12,7 @@ DIR="-v `pwd`/html:/var/www/html "
 
 for a in $(seq 1 $MAX)
 do
-docker run -d $DIR  --name s$a who0/dockweb-php-fpm
+docker run -d $DIR -e "HOSTNAME=s$a"  --name s$a who0/dockweb-php-fpm
 CMD="$CMD --link s$a:s$a "
 LST="$LST s$a"
 done

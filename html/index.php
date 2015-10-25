@@ -11,7 +11,23 @@
 
 <div>
 <h1> NginX Test > with php-fpm </h1>
-<p> you're on <?php echo $_SERVER['HOSTNAME'] ?></p>
+<p> you're on <br>
+
+<?php
+$lst=file("serv");
+sort($lst);
+
+foreach($lst as $a)
+{
+list(,$grp,$serv) = preg_split('/\//',trim($a));
+echo  ($_SERVER['HOSTNAME']== $serv )?">>> $a <<< <br>":"$a<br>";
+}
+
+
+?>
+
+
+</p>
 </div>
 
 <canvas id="c"></canvas>

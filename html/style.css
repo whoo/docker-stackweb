@@ -1,2 +1,2 @@
-body { margin: 0px; padding: 0px; background-color: #000; color: white;}
-div { position: fixed; width: 400px; height: 200px; top: 100px; }
+body { margin: 0px; padding: 0px; background-color: #000; color: white; font-family: helvetica;}
+div { position: fixed; width: 500px; height: 200px; top: 100px;  left: 50px;}
